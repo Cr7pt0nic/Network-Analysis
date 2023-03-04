@@ -1,5 +1,5 @@
 # Network-Analysis
-A very simple tool used for network analysis 
+A very simple tool used for network analysis and blocking attackers using iptables automatically
 
 ```pip install scapy```
 
