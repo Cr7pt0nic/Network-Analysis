@@ -27,7 +27,7 @@ def analyze_packet(packet):
             ip_count[src_ip] = {"count": 1, "time": time.time()}
         
       
-        if ip_count[src_ip]["count"] > 50:
+        if ip_count[src_ip]["count"] > 500:
             print("\033[31m" + f"DDOS attack detected from {src_ip}:{src_port} to {dst_ip}:{dst_port}" + "\033[0m")
 
             os.system(f"iptables -A INPUT -s {src_ip} -j DROP")
